@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  font-family: "Montserrat";
+}
+
+.rightPanel {
+  background-color: #5c5f6c;
+  height: 100%;
+  width: 55vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.calendar {
+  display: flex;
+  right: 150px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calendar-container {
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  overflow-y: auto;
+  min-height: 200px;
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+  margin-top: 50px;
+}
+.calendar-header button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+.calendar-header h1 {
+  font-size: 25px;
+}
+
+.leftSvg {
+  margin-right: 121px;
+}
+
+.rightSvg {
+  margin-left: 121px;
+}
+
+.calendar-body {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.days-of-week {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  box-shadow: 0px -2px 0px 0px rgba(0, 0, 0, 0.36);
+  padding-top: 50px;
+}
+
+.day-of-week {
+  color: #bebfc4;
+  font-family: "Montserrat";
+  padding: 5px;
+  font-size: 15px;
+  padding-bottom: 58px;
+}
+
+.days {
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 46px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.clicked-day {
+  font-size: 30px;
+}
+
+.month {
+  color: #fff;
+}
+
+.calendar-day-next-month {
+  color: #adaeb5;
+}
+
+.calendar-day-previous-month {
+  color: #adaeb5;
+}
+
+.current-day {
+  background-color: #3c82f9;
+  color: #fff;
+  border-radius: 70%;
+}
+
+.empty-day {
+  background-color: transparent;
+  border: none;
+}
+
+.open-modal {
+  background-color: #3c82f9;
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 20px;
+  border-radius: 90%;
+}
+
+.events-main {
+  margin-left: 155px;
+}
+
+.shadow {
+  position: absolute;
+  background-color: #F3F3F3;
+  width: 50%;
+  height: 3px;
+  top: 150px;
+}/*# sourceMappingURL=Calendar.css.map */

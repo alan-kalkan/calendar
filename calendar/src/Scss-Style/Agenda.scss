@@ -1,0 +1,46 @@
+@import "./mixins";
+@import "./placeholders";
+@import "./variables";
+
+.agenda {
+  display: flex;
+  flex-direction: column;
+  height: min-content;
+  width: fit-content;
+  max-height: 700px; /* Réglez la hauteur maximale souhaitée */
+  overflow-y: auto; /* Activez le défilement vertical si nécessaire */
+}
+.events-item {
+  width: 12px;
+}
+/* Style des créneaux horaires */
+.time-slot {
+  padding: 30px;
+  border-bottom: 1px solid $transparantGrey; /* Ligne horizontale pour chaque heure */
+  font-size: 25px;
+  width: 70vh;
+  margin-left: 155px;
+}
+
+/* Style de l'heure */
+.time {
+  font-weight: bold;
+  color: $lightGrey;
+}
+
+/* Style des événements (à personnaliser selon vos besoins) */
+.event {
+  background-color: $lightPurple;
+  color: #fff;
+  padding: 5px;
+  margin: 5px 0px 0px 4px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.closing-cross {
+  display: flex;
+  margin: 30px 40px 30px 0px;
+}
