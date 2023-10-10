@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 .modal {
   display: flex;
@@ -38,8 +37,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%; /* Définissez la largeur à 100% */
-  height: 100%; /* Définissez la hauteur à 100% */
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
